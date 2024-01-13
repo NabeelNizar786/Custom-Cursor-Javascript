@@ -10,6 +10,13 @@ a{
     text-decoration: none;
 }
 
+.hovered{
+    height: 56px !important;
+    width: 56px !important;
+    background: #fff;
+    mix-blend-mode: difference;
+}
+
 .cursor{
     height: 24px;
     width: 24px;
@@ -19,5 +26,27 @@ a{
     top: 0;
     left: 0;
     z-index: 9999;
-    transition:all 150ms ease-out
+    transition:all 150ms ease-out;
+    pointer-events:none;
+}
+
+.wrapper{
+    max-width: 960px;
+    margin:0px auto;
+}
+
+nav {
+    ul.menu{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        list-style: none;
+        height: 100px;
+        margin: 0;
+        padding: 0;
+    }    
+}
+
+article{
+    margin-bottom: 40px;
 }
